@@ -1,20 +1,20 @@
 package Developer;
 
 public class Employee {
-    int id;
+    long id;
     String name;
     double salary;
-    public Employee(int id,String name,double salary){
+    public Employee(long id,String name){
         this.id=id;
         this.name=name;
-        this.salary=salary;
+
     }
 
-    public int getId() {
-        return id;
+    public long getId() {
+        return   id ;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -35,5 +35,13 @@ public class Employee {
     }
     public void work(){
         System.out.println("Employee starts to working");
+    }
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }
